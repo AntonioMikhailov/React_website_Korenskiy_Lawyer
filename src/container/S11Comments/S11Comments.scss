@@ -1,0 +1,68 @@
+@import '../../variables.scss';
+.s11 {
+  padding: 120px 0px 0px 0px;
+  &-wrapper {
+    width: 100%;
+    margin: 60px 0px 0px 0px;
+  }
+  &-item {
+      padding: 0  20px;
+     flex-basis: 33.3%;
+     flex-shrink: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+ 
+  &-item__icon img {
+    width: 35px;
+  }
+  &-item__text {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    height: 100%;
+  }
+  &-item__name {
+    font-family: b;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    color:$purple;
+   font-style: italic;
+   text-align: center;
+  }
+  &-indicator__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+  }
+  &-indicator__item {
+    width: 15px;
+    height: 15px;
+   border-radius: 50%;
+   background-color: #dbc29e;
+   margin: 0px 10px 0px 0px;
+   cursor: pointer;
+   transition: all 0.3s ease .0s;
+  }
+  &-indicator__active {
+    background-color: $purple;
+  }
+  &-hide__indicator {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+   & {
+      padding: 80px 0px 0px 0px;
+    }
+    &-item {
+     flex-basis: 100%;
+  }
+  &-row {
+     margin-top: 30px;
+  }
+  &-hide__indicator {
+    display: block;
+  }
+  }
+}

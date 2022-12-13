@@ -1,0 +1,87 @@
+@charset 'UTF-8';
+.slick-prev,.slick-next{
+    font-size: 0; /*нужен иначе текст появится Prev-Next*/
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    z-index: 20;
+    transition: all 0.3s ease .0s;
+}
+.slick-prev {
+    left:  15px;
+}
+.slick-prev:before {
+    content: '\00AB';
+}
+.slick-next {
+    right: 15px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+   line-height: 1;
+ color: #000000;
+ transition: all 0.3s ease .0s;
+ }
+.slick-next:before {
+    content: '\00BB';
+}
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: rgb(163, 163, 163);
+}
+/* Dots */
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background-color: rgb(166, 166, 166);
+    border-radius: 50%;
+    transition: all 0.3s ease .0s;
+}
+.slick-dots li button:hover {
+  background-color: rgb(82, 82, 82);
+}
+.slick-dots li button:focus {
+  background-color: rgb(180, 67, 67);
+}
